@@ -9,6 +9,7 @@ import {Page404Component} from './page404/page404.component';
 import {EventComponent} from './event/event.component';
 import {MailService} from './mail.service';
 import { ChildComponent } from './child/child.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ChildComponent } from './child/child.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   // 配置服务

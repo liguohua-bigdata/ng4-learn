@@ -1,5 +1,15 @@
-<p>
-  child works!
+<div>
+  <p>child works!</p>
+  <!--用于测试input-->
+  <div>{{inputMsg}}</div>
+  <!--用于测试双向数据绑定-->
+  <div>
+    <input #myInput type="text" [(ngModel)]="message">
+    <span>{{message}}</span>
+  </div>
+  <!--用于测试单向数据绑定-->
+  <div>
+    <input #myInput2 type="text" [ngModel]="message2">
+  </div>
+</div>
 
-</p>
-<div>{{inputMsg}}</div>

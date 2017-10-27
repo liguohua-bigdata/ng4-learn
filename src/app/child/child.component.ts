@@ -6,10 +6,14 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-  @Input() inputMsg: string
-  constructor() { }
+  @Input() inputMsg: string;
+  message: string;
+  message2= '测试单向数据绑定';
 
-  ngOnInit() {
+  constructor() {
   }
 
+  ngOnInit() {
+    // this.message2 = '单向数据绑定';
+  }
 }
