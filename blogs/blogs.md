@@ -14,7 +14,6 @@ https://segmentfault.com/a/1190000009873313
 ```
 
 
-
 ```
 慕课网 - TypeScript 入门
 http://www.imooc.com/learn/763
@@ -23,4 +22,9 @@ http://www.imooc.com/learn/763
 ```
 TypeScript 教程
 https://www.w3cschool.cn/typescript/
+```
+
+```
+Angular 2.0系列视频教程，大漠穷秋
+http://v.youku.com/v_show/id_XMjUwMjYyNTA5Ng==.html
 ```
