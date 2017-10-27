@@ -1,0 +1,16 @@
+<p>
+  event works!
+
+</p>
+<div>
+  <input #myInput type="text">
+  <!--参数名一定要使用 $event-->
+  <button (click)="onClick($event, myInput.value)">点击</button>
+
+</div>
+
+
+<div>
+  <input #myInput type="text" (keydown.enter)="onEnter($event, myInput.value)">
+
+</div>
