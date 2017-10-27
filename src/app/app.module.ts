@@ -8,6 +8,7 @@ import {ProductionComponent} from './production/production.component';
 import {Page404Component} from './page404/page404.component';
 import {EventComponent} from './event/event.component';
 import {MailService} from './mail.service';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {MailService} from './mail.service';
     HomeComponent,
     ProductionComponent,
     Page404Component,
-    EventComponent
+    EventComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,8 @@ import {MailService} from './mail.service';
   // 配置服务
   providers: [
     MailService,
+    // 非Type类型的service
+    {provide: 'apiUrl', useValue: 'https://jsonplaceholder.typicode.com/'}
   ],
   // 配置此模块的主component
   bootstrap: [AppComponent]

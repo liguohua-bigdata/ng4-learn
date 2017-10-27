@@ -1,5 +1,5 @@
-import {Component, Inject, OnInit} from '@angular/core';
-import {MailService} from "../mail.service";
+import {Component, Inject, Input, OnInit} from '@angular/core';
+import {MailService} from '../mail.service';
 
 @Component({
   selector: 'app-page404',
@@ -7,8 +7,10 @@ import {MailService} from "../mail.service";
   styleUrls: ['./page404.component.css']
 })
 export class Page404Component implements OnInit {
-
-  constructor(@Inject(MailService) private mailService) {
+  constructor(
+    @Inject(MailService) private mailService,
+    @Inject('apiUrl') private apiUrl,
+  ) {
 
   }
 

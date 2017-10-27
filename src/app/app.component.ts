@@ -8,6 +8,7 @@ import {Router} from '@angular/router';
 })
 export class AppComponent {
   title = 'app';
+  msg = 'hello,this message come form father component! ';
   // 依赖注入router
   constructor(private router: Router) {
   }

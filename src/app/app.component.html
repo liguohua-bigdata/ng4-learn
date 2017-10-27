@@ -21,4 +21,9 @@
 <input type="button" value="主页" (click)="gotoHome()"/>
 <input type="button" value="商品" (click)="gotoProduction()"/>
 <input type="button" value="事件" (click)="gotoEvent()"/>
+
 <router-outlet></router-outlet>
+
+
+<app-child [inputMsg]="msg"></app-child>
+

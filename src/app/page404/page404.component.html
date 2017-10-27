@@ -1,4 +1,15 @@
-<p>
-  page404 works!
-  {{mailService.message}}
-</p>
+<div>page404 works!</div>
+<!--用于测试Type类型的服务-->
+<div> {{ mailService.message }}</div>
+<!--用于测试非type类型的服务-->
+<div> {{apiUrl}}</div>
+<!--用于测试数组和循环-->
+<div>
+  <ul>
+    <li *ngFor="let notification of mailService.notifications; index as i;">
+      {{i}} ---- {{notification}}
+    </li>
+  </ul>
+</div>
+
+<!--用于测试input-->
