@@ -11,5 +11,9 @@
   <div>
     <input #myInput2 type="text" [ngModel]="message2">
   </div>
+<div>
+  <button (click)="update.emit({text: message3})">更新</button>
+</div>
+
 </div>
 

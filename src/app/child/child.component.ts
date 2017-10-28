@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -12,6 +12,10 @@ export class ChildComponent implements OnInit {
 
   constructor() {
   }
+
+  message3:string="hello output!";
+  @Output() update = new EventEmitter<{text: string}>();
+
 
   ngOnInit() {
     // this.message2 = '单向数据绑定';

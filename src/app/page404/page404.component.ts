@@ -1,4 +1,4 @@
-import {Component, Inject, Input, OnInit} from '@angular/core';
+import {Component, Inject, Input, OnInit, Output} from '@angular/core';
 import {MailService} from '../mail.service';
 
 @Component({
@@ -10,9 +10,8 @@ export class Page404Component implements OnInit {
   constructor(
     @Inject(MailService) private mailService,
     @Inject('apiUrl') private apiUrl,
-  ) {
+  ) {}
 
-  }
 
   ngOnInit() {
   }

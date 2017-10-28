@@ -26,4 +26,11 @@ export class AppComponent {
     // 使用router进行导航
     this.router.navigate(['/event']);
   }
+
+  onUpdate(msg) {
+    console.log(msg)
+  }
+
+
+
 }
